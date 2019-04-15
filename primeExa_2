@@ -1,0 +1,45 @@
+
+public class primeExa_2{
+	
+	
+public static void main(String []args){
+	
+	int start = 1;
+	int end = 1000;
+	int num = 0;
+	String primeNumber = "";
+	try{
+		System.out.println(" ");
+		
+		for(int i= start; i<=end;i++){
+			int counter =0;
+			{
+				for(num = i; num>=1; num--){
+					
+					if(i%num==0){
+						
+						counter = counter+1;
+						
+					}
+				}
+				if(counter==2){
+					primeNumber = primeNumber + i + " ";
+				}
+			}
+			
+			
+		}
+		System.out.print(primeNumber+" ");
+			
+		
+		System.out.println(" ");
+		
+	}
+	catch(Exception e){
+		System.out.println("An Error :"+e);
+	}
+	
+}	
+
+	
+}
